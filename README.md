@@ -10,7 +10,7 @@ This is a socket used for chats app
 
 # To run the app in development mode
 
-Make sure you have nodeJs install, version 16 and >
+Make sure you have nodeJs and yarn or npm installed, version 16 and >
 
 ```bash
 yarn install
