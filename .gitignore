@@ -1,0 +1,40 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build output
+dist
+build
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Tests
+test/
+__tests__/
+
+# Environment-specific files
+.env
+.env.local
+.env.*.local
+
+# Compiled binary addons
+build/Release
+
+# macOS-specific files
+.DS_Store

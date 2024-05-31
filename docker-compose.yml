@@ -1,0 +1,23 @@
+version: "3"
+
+services:
+  chat-socket-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: chat-socket-app
+    image: chat-socket-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - PORT=${PORT}
+    volumes:
+      - ./logs:/logs
+    networks:
+      - app-network
+    ports:
+      - "7500:7500"
+
+networks:
+  app-network:
+    driver: bridge
